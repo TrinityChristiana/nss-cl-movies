@@ -25,4 +25,6 @@ const movieFactory = (movie) => {
     `;
 };
 
+
+
 getMovies();
