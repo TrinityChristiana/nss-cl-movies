@@ -4,8 +4,8 @@
 getMovies();
 
 const searchBox = document.querySelector("#searchBox");
-searchBox.addEventListener("keyup", (e) => {
-    if(e.keyCode === 13){
-        searchMovies(searchBox.value);
-    }
-});
+const searchBtn = document.querySelector("#searchBtn");
+
+searchBox.addEventListener("keyup", (e) => e.keyCode === 13 ? searchMovies(searchBox.value) : null);
+
+searchBtn.addEventListener("click", () => searchMovies(searchBox.value));
