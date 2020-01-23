@@ -1,6 +1,3 @@
-// import nnn from "./movieManager"
-// import nnn from "./apiManager"
-
 getMovies();
 
 const searchBox = document.querySelector("#searchBox");

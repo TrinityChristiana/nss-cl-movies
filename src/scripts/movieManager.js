@@ -2,9 +2,7 @@
 const renderMovies = (movies, searchInput) => {
     const movieContainer = document.querySelector("#movie-container");
     movieContainer.innerHTML = "";
-    // console.log(searchInput);
     const hasSearch = searchInput != undefined ? true : false;
-    console.log(movies);
     if (hasSearch && movies.length == 0) {
         movieContainer.innerHTML = `There are no movies with "${searchInput}" in the title`;
     } else if (hasSearch) {
@@ -22,7 +20,6 @@ const renderMovies = (movies, searchInput) => {
 
 // function that create html for each movie array item
 const movieFactory = (movie) => {
-    // console.log(movie);
     return `
     <section class="movie">
         <h2>Title: ${movie.title}</h2>
