@@ -1,0 +1,29 @@
+{
+    "movies": [
+        {
+            "id": 1,
+            "title": "The Firm",
+            "yearReleased": 1993
+        },
+        {
+            "id": 2,
+            "title": "The Pelican Brief",
+            "yearReleased": 1993
+        },
+        {
+            "id": 3,
+            "title": "The Client",
+            "yearReleased": 1994
+        },
+        {
+            "id": 4,
+            "title": "A Time To Kill",
+            "yearReleased": 1996
+        },
+        {
+            "id": 5,
+            "title": "The Chamber",
+            "yearReleased": 1996
+        }
+    ]
+}
