@@ -7,10 +7,9 @@ const getMovies = () => {
 };
 
 const searchMovies = (searchInput) => {
-    
     const movieURL = `http://localhost:8088/movies?q=${searchInput}`;
-    // console.log(searchInput);
     fetch(movieURL)
         .then(response => response.json())
-        .then(movies => renderMovies(movies));
+        // .then(data => console.log(data))
+        .then(movies => renderMovies(movies, searchInput));
 }
