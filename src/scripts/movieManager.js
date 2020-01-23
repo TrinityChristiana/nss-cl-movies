@@ -1,6 +1,7 @@
 //  Function that argument (list of movies) displays each item on console.log
 const renderMovies = (movies) => {
-    const movieContainer = document.querySelector("#movie-container")
+    const movieContainer = document.querySelector("#movie-container");
+    movieContainer.innerHTML = "";
     movies.forEach(movie => {
         movieContainer.innerHTML += movieFactory(movie);
     });
